@@ -7,11 +7,5 @@ pipeline {
                 echo 'Initializing MVN clean package'
             }
         }
-         post{
-			success {
-				echo 'Now Archiving'
-				archiveArtifacts artifacts : '**/*.war'
-			}			
-		}		 
-    }
+        
 } 
