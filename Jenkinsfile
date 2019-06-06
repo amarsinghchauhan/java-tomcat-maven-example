@@ -8,13 +8,13 @@ pipeline {
         }
          stage ('clean') {
             steps {
-                echo 'clean msg'
+                mvn 'clean'
             }
 		}
 		
 		stage ('package') {
             steps {
-                echo 'Hello World'
+                mvn 'package'
 			}
         }
     }
