@@ -3,10 +3,10 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
+                echo "Initializing the code file"
                 echo "PATH = ${PATH}"
                 echo "M2_HOME = ${M2_HOME}"
-                '''
+                
             }
         }
         
