@@ -6,8 +6,11 @@ pipeline {
                 echo "Initializing code file"
             }
         }
-        
-        stage ('Build') {
+        stage ('build') {
+            steps {
+                echo 'Hello World'
+            }
+        stage ('package') {
             steps {
                 echo 'Hello World'
             }
