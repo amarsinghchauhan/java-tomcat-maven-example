@@ -8,14 +8,14 @@ pipeline {
         }
          stage ('clean') {
             steps {
-                mvn 'clean'
+                build 'mvn clean'
                 echo "clean completed"
             }
 		}
 		
 		stage ('package') {
             steps {
-                mvn 'package'
+                build 'mvn package'
                 echo "package completed"
 			}
         }
