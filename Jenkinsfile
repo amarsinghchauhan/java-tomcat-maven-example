@@ -3,7 +3,8 @@ pipeline {
     stages {
 		stage ('Build Servlet Project') {
             steps {
-				bat 'mvn clean package'
+				bat 'mvn'
+				bat 'package'
                 echo 'Initializing MVN clean package'
             }
         }
