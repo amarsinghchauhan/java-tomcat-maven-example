@@ -6,13 +6,17 @@ pipeline {
                 echo "Initializing code file"
             }
         }
-        
-        stage ('Build') {
+         stage ('clean') {
+            steps {
+                echo 'clean msg'
+            }
+		}
+		
+		stage ('package') {
             steps {
                 echo 'Hello World'
-            }
+			}
         }
     }
-	
 }
     
