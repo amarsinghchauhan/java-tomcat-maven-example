@@ -12,9 +12,9 @@ pipeline {
             }
 		}
 		
-		stage ('package') {
+		stage ('deploy') {
             steps {
-                echo 'Hello World'
+                echo 'eco 'Deployed an artifact'
 			}
         }
     }
