@@ -13,8 +13,11 @@ pipeline {
 >>>>>>> a203e4e76294971b22dba21a03032f14d6a2041e
             }
         }
-        
-        stage ('Build') {
+        stage ('build') {
+            steps {
+                echo 'Hello World'
+            }
+        stage ('package') {
             steps {
                 echo 'Hello World'
             }
