@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('Build servlet Project') {
             steps {
-                bat 'mvn clean packa'
+                bat 'mvn clean package'
             }
 
             post ('Commented') {
